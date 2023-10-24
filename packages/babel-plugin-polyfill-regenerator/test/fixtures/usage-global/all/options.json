@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-regenerator",
+      {
+        "method": "usage-global"
+      }
+    ]
+  ]
+}

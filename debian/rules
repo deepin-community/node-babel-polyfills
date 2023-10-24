@@ -1,4 +1,23 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/pkg-info.mk
+
 %:
 	dh $@
+
+override_dh_auto_build:
+	gulp build
+	gulp bundle
+
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS) $(DEB_BUILD_PROFILES)))
+override_dh_auto_test:
+	ln -s ../`cat debian/nodejs/main` node_modules/
+	node test/esm/index.mjs
+endif
+
+override_dh_gencontrol:
+	dh_gencontrol -pnode-babel-helper-define-polyfill-provider -- -v`pkgjs-pjson packages/babel-helper-define-polyfill-provider version`~$(DEB_VERSION)
+	dh_gencontrol -pnode-babel-plugin-polyfill-corejs2 -- -v`pkgjs-pjson packages/babel-plugin-polyfill-corejs2 version`~$(DEB_VERSION)
+	dh_gencontrol -pnode-babel-plugin-polyfill-corejs3 -- -v`pkgjs-pjson packages/babel-plugin-polyfill-corejs3 version`~$(DEB_VERSION)
+	dh_gencontrol -pnode-babel-plugin-polyfill-es-shims -- -v`pkgjs-pjson packages/babel-plugin-polyfill-es-shims version`~$(DEB_VERSION)
+	dh_gencontrol -pnode-babel-plugin-polyfill-regenerator -- -v`pkgjs-pjson packages/babel-plugin-polyfill-regenerator version`~$(DEB_VERSION)

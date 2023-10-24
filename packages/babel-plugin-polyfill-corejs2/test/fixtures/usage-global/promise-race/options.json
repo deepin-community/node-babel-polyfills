@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-corejs2",
+      {
+        "method": "usage-global",
+        "targets": {
+          "browsers": [
+            "ie > 10"
+          ]
+        }
+      }
+    ]
+  ]
+}

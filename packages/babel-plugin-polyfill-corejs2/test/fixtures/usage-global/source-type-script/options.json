@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-corejs2",
+      {
+        "method": "usage-global",
+        "targets": {
+          "node": "4.0.0"
+        }
+      }
+    ]
+  ]
+}

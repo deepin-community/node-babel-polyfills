@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-corejs3",
+      {
+        "method": "entry-global",
+        "targets": {
+          "chrome": 63
+        },
+        "exclude": [
+          "es.string.pad-start",
+          "es.string.pad-end",
+          "web.timers",
+          "web.immediate",
+          "web.dom-collections.iterator"
+        ]
+      }
+    ]
+  ]
+}

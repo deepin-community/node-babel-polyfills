@@ -1,0 +1,39 @@
+- `Map`
+- `Set`
+- `Promise`
+- `RegExp` (`new RegExp`, when given a RegExp as the pattern, will no longer throw when given a "flags" string argument).
+- `RegExp.prototype[Symbol.match]`
+- `RegExp.prototype[Symbol.replace]`
+- `RegExp.prototype[Symbol.search]`
+- `RegExp.prototype[Symbol.split]`
+- `RegExp.prototype.toString`
+- `Number` (binary and octal literals: `Number('0b1')` and `Number('0o7')`)
+- `Number.EPSILON`
+- `Number.MAX_SAFE_INTEGER`
+- `Number.MIN_SAFE_INTEGER`
+- `Array.prototype.fill()`
+- `Object.keys()`
+- `Object.setPrototypeOf()`
+- `Math.asinh()`
+- `Math.cosh()`
+- `Math.expm1()`
+- `Math.hypot()`
+- `Math.log2()`
+- `Math.sinh()`
+- `Math.tanh()`
+- `Math.trunc()`
+- `Reflect.construct()`
+- `Reflect.defineProperty()`
+- `Reflect.deleteProperty()`
+- `Reflect.get()`
+- `Reflect.getOwnPropertyDescriptor()`
+- `Reflect.getPrototypeOf()`
+- `Reflect.has()`
+- `Reflect.isExtensible()`
+- `Reflect.preventExtensions()`
+- `Reflect.set()`
+- `Reflect.setPrototypeOf()`
+- `Symbol.match` (and corresponding `String#match`, `String#startsWith`, `String#endsWith`, `String#includes`, `RegExp` support)
+- `Symbol.replace` (and corresponding `String#replace` support)
+- `Symbol.search` (and corresponding `String#search` support)
+- `Symbol.split` (and corresponding `String#split` support)

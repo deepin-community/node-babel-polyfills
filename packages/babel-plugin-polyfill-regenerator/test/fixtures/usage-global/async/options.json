@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-regenerator",
+      {
+        "method": "usage-global"
+      }
+    ],
+    [
+      "@@/polyfill-corejs2",
+      {
+        "method": "usage-global"
+      }
+    ]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ]
+}

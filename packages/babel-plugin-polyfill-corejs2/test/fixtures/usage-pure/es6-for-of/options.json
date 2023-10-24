@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "@babel/plugin-transform-for-of",
+    [
+      "@@/polyfill-corejs2",
+      {
+        "method": "usage-pure"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-corejs2",
+      {
+        "method": "entry-global",
+        "targets": {
+          "ie": 9
+        }
+      }
+    ]
+  ]
+}
