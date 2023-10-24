@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-corejs3",
+      {
+        "method": "usage-pure"
+      }
+    ],
+    [
+      "@babel/plugin-transform-modules-commonjs",
+      {
+        "loose": true
+      }
+    ]
+  ]
+}

@@ -1,0 +1,8 @@
+version=4
+opts=\
+mode=git,\
+pretty=0~%cd,\
+repacksuffix=+ds1,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-babel-polyfills-$1/ \
+ https://github.com/babel/babel-polyfills.git HEAD

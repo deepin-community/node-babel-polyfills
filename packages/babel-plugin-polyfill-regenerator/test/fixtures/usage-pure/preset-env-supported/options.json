@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "chrome": 70
+  },
+  "plugins": [
+    [
+      "@@/polyfill-regenerator",
+      {
+        "method": "usage-pure"
+      }
+    ]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ]
+}

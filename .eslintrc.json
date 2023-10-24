@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "plugins": ["prettier", "@babel/development", "import"],
+  "extends": "eslint:recommended",
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "env": { "node": true, "es6": true },
+  "overrides": [
+    {
+      "files": ["**/*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "rules": {
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error"
+      }
+    },
+    {
+      "files": ["packages/*/src/**/*.{js,ts}"],
+      "rules": {
+        "@babel/development/no-undefined-identifier": "error",
+        "@babel/development/no-deprecated-clone": "error",
+        "import/no-extraneous-dependencies": "error",
+        "eqeqeq": ["error", "always", { "null": "ignore" }],
+        "guard-for-in": "error"
+      }
+    },
+    {
+      "files": ["packages/*/test/**/*.js"],
+      "env": { "jest": true }
+    }
+  ]
+}

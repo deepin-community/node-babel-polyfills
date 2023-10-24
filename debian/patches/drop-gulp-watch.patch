@@ -1,0 +1,31 @@
+Description: drop useless gulp plugin
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-05-23
+
+--- a/Gulpfile.js
++++ b/Gulpfile.js
+@@ -5,7 +5,7 @@
+ const chalk = require("chalk");
+ const newer = require("gulp-newer");
+ const babel = require("gulp-babel");
+-const gulpWatch = require("gulp-watch");
++//const gulpWatch = require("gulp-watch");
+ const fancyLog = require("fancy-log");
+ const gulp = require("gulp");
+ const path = require("path");
+@@ -122,14 +122,3 @@
+ gulp.task("bundle", () => buildRollup());
+ 
+ gulp.task("default", gulp.series("build"));
+-
+-gulp.task(
+-  "watch",
+-  gulp.series("build", function watch() {
+-    gulpWatch(
+-      "./packages/*/src/**/*.{js,ts}",
+-      { debounceDelay: 200 },
+-      gulp.task("build")
+-    );
+-  })
+-);

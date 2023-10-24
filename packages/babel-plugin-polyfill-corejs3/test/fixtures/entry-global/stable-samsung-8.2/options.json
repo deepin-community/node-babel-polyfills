@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-corejs3",
+      {
+        "method": "entry-global",
+        "targets": {
+          "samsung": "8.2"
+        }
+      }
+    ]
+  ]
+}

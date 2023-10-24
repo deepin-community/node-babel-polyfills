@@ -1,0 +1,14 @@
+# Test data
+source-is-missing *packages/babel-plugin-polyfill-corejs2/test/fixtures/usage-pure/es6-for-of/output.js*
+source-is-missing *packages/babel-plugin-polyfill-corejs3/test/fixtures/usage-pure/es6-for-of/output.js*
+source-contains-prebuilt-javascript-object *packages/babel-plugin-polyfill-corejs2/test/fixtures/usage-pure/es6-for-of/output.js*
+source-contains-prebuilt-javascript-object *packages/babel-plugin-polyfill-corejs3/test/fixtures/usage-pure/es6-for-of/output.js*
+very-long-line-length-in-source-file *packages/babel-plugin-polyfill-corejs2/test/fixtures/usage-pure/es6-for-of/output.js*
+very-long-line-length-in-source-file *packages/babel-plugin-polyfill-corejs3/test/fixtures/usage-pure/es6-for-of/output.js*
+very-long-line-length-in-source-file *packages/babel-plugin-polyfill-es-shims/test/fixtures/usage-pure/es6-for-of/output.mjs*
+very-long-line-length-in-source-file *packages/babel-plugin-polyfill-es-shims/test/fixtures/usage-pure/instance-methods/output.mjs*
+very-long-line-length-in-source-file *packages/babel-plugin-polyfill-es-shims/test/fixtures/usage-pure/instance-methods/stderr.txt*
+very-long-line-length-in-source-file *packages/babel-plugin-polyfill-es-shims/test/fixtures/usage-pure/static-methods/stderr.txt*
+
+# Doc
+very-long-line-length-in-source-file *.md*

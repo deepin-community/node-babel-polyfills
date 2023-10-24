@@ -1,0 +1,4 @@
+@babel/core
+@babel/compat-data
+@babel/helper-define-polyfill-provider
+semver

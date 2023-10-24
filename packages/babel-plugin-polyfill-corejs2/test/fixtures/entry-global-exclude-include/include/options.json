@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    [
+      "@@/polyfill-corejs2",
+      {
+        "method": "entry-global",
+        "targets": {
+          "chrome": 55
+        },
+        "include": [
+          "es6.map",
+          "es6.set"
+        ]
+      }
+    ]
+  ]
+}

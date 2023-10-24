@@ -1,0 +1,10 @@
+import "object.entries/auto";
+import "array-includes/auto";
+import "string.prototype.includes/auto";
+import "object.values/auto";
+import "object.fromentries/auto";
+'entries' in Object;
+'includes' in [1, 2, 3];
+'va' + 'lues' in Object;
+var keys = 'fromEntries';
+keys in Object;
